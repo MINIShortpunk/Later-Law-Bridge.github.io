@@ -3,153 +3,289 @@
   <head>
     <title>Later Law Bridge</title>
     <style>
-  body {
-    background-color: #0a1f44;
-    color: #f0e6c8;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  nav {
-    background-color: #c9a84c;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  nav a {
-    color: #0a1f44;
-    text-decoration: none;
-    margin-right: 15px;
-  }
-  
-  h1 {
-    color: #c9a84c;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #2c2c2c;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #0a1f44;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #c9a84c;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f0e6c8;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0a1f44 0%, #1a3a7a 100%);
+  color: #f0e6c8;
+  padding: 100px 40px;
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge {
+  background-color: #c9a84c;
+  color: #0a1f44;
+  padding: 8px 24px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin: 0 0 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 0 0 40px;
+  max-width: 800px;
+  line-height: 1.6;
+  color: #b8c9e8;
+}
+
+.hero-button {
+  background-color: #c9a84c;
+  color: #0a1f44;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-button:hover {
+  background-color: #f0e6c8;
+  transform: translateY(-2px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #0a1f44;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+p {
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.quote-section {
+  background-color: #f7f4ee;
+  border-left: 4px solid #c9a84c;
+  padding: 24px;
+  margin: 40px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0a1f44;
+  line-height: 1.8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.card {
+  background-color: #fafaf8;
+  padding: 32px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #0a1f44;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
 .interview-card,
 .episode-card,
 .community-section {
-  background-color: #1a3a7a;
-  padding: 15px;
-  margin: 15px 0;
-  border-left: 4px solid #c9a84c;
+  background-color: #ffffff;
+  padding: 24px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+}
+
+.interview-card:hover,
+.episode-card:hover,
+.community-section:hover {
+  border-color: #c9a84c;
+  box-shadow: 0 8px 24px rgba(201, 168, 76, 0.15);
+  transform: translateY(-4px);
 }
 
 .interview-card h3,
 .episode-card h3,
 .community-section h3 {
-  color: #c9a84c;
-  margin-top: 0;
+  color: #0a1f44;
+  font-size: 18px;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+ul {
+  margin-left: 24px;
+}
+
+li {
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.8;
 }
 
 a {
   color: #c9a84c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
-ul {
-  line-height: 1.8;
+a:hover {
+  color: #0a1f44;
+  text-decoration: underline;
 }
 
-.logo {
-  text-align: center;
-  margin-bottom: 30px;
-  border-bottom: 2px solid #c9a84c;
-  padding-bottom: 20px;
-}
-
-.logo h2 {
-  margin: 0;
-  color: #c9a84c;
-  font-size: 32px;
-}
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  padding: 8px 15px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #1a3a7a;
-  transform: scale(1.05);
-}
-body {
-  line-height: 1.6;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-h1, h2, h3 {
-  font-weight: bold;
-}
-
-p, li {
-  font-size: 16px;
-  color: #e8d9b0;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 footer {
-  border-top: 2px solid #c9a84c;
-  margin-top: 40px;
-  padding-top: 20px;
-  text-align: center;
-  font-size: 14px;
+  background-color: #0a1f44;
   color: #7a94c4;
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
 }
-</style>
+    </style>
   </head>
   <body>
     <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="interviews.html">Interviews</a>
-  <a href="podcast.html">Podcast</a>
-  <a href="community.html">Community</a>
-</nav>
-<div class="logo">
-<svg width="80" height="80" viewBox="0 0 180 110" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;">
-  <g stroke="#c9a84c" stroke-width="2.2" fill="none" stroke-linecap="round">
-    <path d="M30 72 Q90 20 150 72" />
-    <line x1="90" y1="22" x2="90" y2="72"/>
-    <line x1="75" y1="24" x2="72" y2="72"/>
-    <line x1="60" y1="32" x2="55" y2="72"/>
-    <line x1="105" y1="24" x2="108" y2="72"/>
-    <line x1="120" y1="32" x2="125" y2="72"/>
-    <path d="M25 72 Q90 60 90 80 Q90 60 155 72" stroke-width="2"/>
-    <path d="M20 78 Q90 65 90 85 Q90 65 160 78" stroke-width="1.5"/>
-    <path d="M18 84 Q90 70 90 90 Q90 70 162 84" stroke-width="1"/>
-  </g>
-</svg>
-<h2>Later Law Bridge</h2>
-  <p><em>Bridging mature learners with the legal world</em></p>
-</div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="interviews.html">Interviews</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="community.html">Community</a>
+    </nav>
 
-<h1>Welcome to Later Law Bridge</h1>
+    <div class="hero">
+      <div class="badge">For Mature Learners</div>
+      <h1>Bridging Mature Learners with the Legal World</h1>
+      <p>Later Law Bridge connects you with experienced legal professionals through honest, in-depth interviews — because it's never too late to understand the law.</p>
+      <a href="interviews.html" class="hero-button">Watch Interviews</a>
+    </div>
 
-<p>A community for mature learners (30+) studying law or exploring a legal career. No matter where you started — we're here to help you bridge the gap.</p>
+    <div class="container">
+      <h2>About Later Law Bridge</h2>
+      <p>We created Later Law Bridge for curious, motivated mature learners who want real conversations about the law — not textbooks, not jargon, just honest dialogue with the people who live and breathe it every day.</p>
+      
+      <div class="quote-section">
+        "Real conversations with real legal professionals — made for people who want to truly understand the law, later in life."
+      </div>
 
-<h2>What We Offer</h2>
-<ul>
-  <li><strong>Interviews:</strong> Real conversations with legal professionals who took the long way in</li>
-  <li><strong>Podcast:</strong> The Long Way In - fortnightly conversations about law, learning, and life as a mature student</li>
-  <li><strong>Case Explainers:</strong> Videos breaking down the law in plain English</li>
-  <li><strong>Community:</strong> Study support, co-working sessions, and real connections</li>
-</ul>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">🎤</div>
+          <h3>Expert interviews</h3>
+          <p>Hear directly from barristers, solicitors & judges</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">👥</div>
+          <h3>Community</h3>
+          <p>A welcoming space for mature learners</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📚</div>
+          <h3>Free to access</h3>
+          <p>All content is free and easy to navigate</p>
+        </div>
+      </div>
 
-<p><strong><a href="about.html">Learn more about our mission ></a></strong></p>
-<footer>
-  <p>&copy; 2026 Later Law Bridge. Built with love by mature learners, for mature learners.</p>
-</footer>
+      <h2>Latest Interviews</h2>
+      
+      <div class="interview-card">
+        <h3>Coming Soon: Sarah Clarke — Criminal Barrister</h3>
+        <p><em>What really happens inside a courtroom?</em></p>
+        <p>A barrister who came to law after working in healthcare. Her interview covers courtroom realities, the SQE route, and what mature entrants bring to the profession.</p>
+      </div>
+
+      <div class="interview-card">
+        <h3>Coming Soon: James Mitchell — Family Solicitor</h3>
+        <p><em>Understanding your rights in family disputes</em></p>
+        <p>A career changer from teaching. James talks about the transition to law and why mature learners often make better lawyers.</p>
+      </div>
+
+      <div class="interview-card">
+        <h3>Coming Soon: Amara Patel — Employment Lawyer</h3>
+        <p><em>Know your rights at work</em></p>
+        <p>An employment lawyer who studied part-time while raising a family. Her story is about fitting law around life, not life around law.</p>
+      </div>
+
+      <p><strong><a href="mailto:hello@laterlawbridge.com">Want to be interviewed? Get in touch ></a></strong></p>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Later Law Bridge. Built with love by mature learners, for mature learners.</p>
+    </footer>
   </body>
 </html>
