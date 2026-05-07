@@ -3,153 +3,151 @@
   <head>
     <title>About — Later Law Bridge</title>
     <style>
-  body {
-    background-color: #0a1f44;
-    color: #f0e6c8;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  nav {
-    background-color: #c9a84c;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  nav a {
-    color: #0a1f44;
-    text-decoration: none;
-    margin-right: 15px;
-  }
-  
-  h1 {
-    color: #c9a84c;
-  }
-  .interview-card,
-.episode-card,
-.community-section {
-  background-color: #1a3a7a;
-  padding: 15px;
-  margin: 15px 0;
-  border-left: 4px solid #c9a84c;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.interview-card h3,
-.episode-card h3,
-.community-section h3 {
+body {
+  background-color: #ffffff;
+  color: #2c2c2c;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #0a1f44;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
   color: #c9a84c;
-  margin-top: 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f0e6c8;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0a1f44 0%, #1a3a7a 100%);
+  color: #f0e6c8;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 700;
+  color: #f0e6c8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+h1 {
+  font-size: 42px;
+  color: #0a1f44;
+  margin: 0 0 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 32px;
+  color: #0a1f44;
+  margin: 40px 0 20px;
+  font-weight: 700;
+}
+
+p {
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+ul {
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+li {
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.8;
 }
 
 a {
   color: #c9a84c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
-ul {
-  line-height: 1.8;
+a:hover {
+  color: #0a1f44;
+  text-decoration: underline;
 }
 
-.logo {
-  text-align: center;
-  margin-bottom: 30px;
-  border-bottom: 2px solid #c9a84c;
-  padding-bottom: 20px;
-}
-
-.logo h2 {
-  margin: 0;
-  color: #c9a84c;
-  font-size: 32px;
-}
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  padding: 8px 15px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #1a3a7a;
-  transform: scale(1.05);
-}
-body {
-  line-height: 1.6;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-h1, h2, h3 {
-  font-weight: bold;
-}
-
-p, li {
-  font-size: 16px;
-  color: #e8d9b0;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 footer {
-  border-top: 2px solid #c9a84c;
-  margin-top: 40px;
-  padding-top: 20px;
-  text-align: center;
-  font-size: 14px;
+  background-color: #0a1f44;
   color: #7a94c4;
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  margin-top: 80px;
 }
-</style>
+    </style>
   </head>
   <body>
     <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="interviews.html">Interviews</a>
-  <a href="podcast.html">Podcast</a>
-  <a href="community.html">Community</a>
-</nav>
-<svg width="80" height="80" viewBox="0 0 180 110" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;">
-  <g stroke="#c9a84c" stroke-width="2.2" fill="none" stroke-linecap="round">
-    <path d="M30 72 Q90 20 150 72" />
-    <line x1="90" y1="22" x2="90" y2="72"/>
-    <line x1="75" y1="24" x2="72" y2="72"/>
-    <line x1="60" y1="32" x2="55" y2="72"/>
-    <line x1="105" y1="24" x2="108" y2="72"/>
-    <line x1="120" y1="32" x2="125" y2="72"/>
-    <path d="M25 72 Q90 60 90 80 Q90 60 155 72" stroke-width="2"/>
-    <path d="M20 78 Q90 65 90 85 Q90 65 160 78" stroke-width="1.5"/>
-    <path d="M18 84 Q90 70 90 90 Q90 70 162 84" stroke-width="1"/>
-  </g>
-</svg>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="interviews.html">Interviews</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="community.html">Community</a>
+    </nav>
 
-<h2>Our Mission</h2>
-<p>To make a career in law genuinely reachable for adults who came to it later — by sharing the conversations, study support and role models that turn the long way in from an isolating climb into a connected journey.</p>
+    <div class="hero">
+      <h1>About Later Law Bridge</h1>
+    </div>
 
-<h2>Who We're For</h2>
-<p>Mature learners aged 30+ who are studying law, planning to study, or considering it. Whether you're returning to an LLB, exploring the SQE route, or just curious — this is a space built for you.</p>
+    <div class="container">
+      <h2>Our Mission</h2>
+      <p>To make a career in law genuinely reachable for adults who came to it later — by sharing the conversations, study support and role models that turn the long way in from an isolating climb into a connected journey.</p>
 
-<h2>Founded By</h2>
-<p><strong>Maria O'Sullivan</strong> — a mature LLB student at Arden University who came to law the long way. Every decision on Later Law Bridge is guided by lived experience, not assumption.</p>
+      <h2>Who We're For</h2>
+      <p>Mature learners aged 30+ who are studying law, planning to study, or considering it. Whether you're returning to an LLB, exploring the SQE route, or just curious — this is a space built for you.</p>
 
-<h2>Our Values</h2>
-<ul>
-  <li><strong>Lived experience is currency.</strong> Your story matters.</li>
-  <li><strong>Warm but rigorous.</strong> Professional standards, human tone.</li>
-  <li><strong>Joyful.</strong> Mature doesn't mean tired.</li>
-  <li><strong>Inclusive by design.</strong> Always free at the point of access.</li>
-  <li><strong>Honest.</strong> We show our working.</li>
-</ul>
-<footer>
-  <p>&copy; 2026 Later Law Bridge. Built with love by mature learners, for mature learners.</p>
-</footer>
+      <h2>Founded By</h2>
+      <p><strong>Maria O'Sullivan</strong> — a mature LLB student at Arden University who came to law the long way. Every decision on Later Law Bridge is guided by lived experience, not assumption.</p>
+
+      <h2>Our Values</h2>
+      <ul>
+        <li><strong>Lived experience is currency.</strong> Your story matters.</li>
+        <li><strong>Warm but rigorous.</strong> Professional standards, human tone.</li>
+        <li><strong>Joyful.</strong> Mature doesn't mean tired.</li>
+        <li><strong>Inclusive by design.</strong> Always free at the point of access.</li>
+        <li><strong>Honest.</strong> We show our working.</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Later Law Bridge. Built with love by mature learners, for mature learners.</p>
+    </footer>
   </body>
 </html>
