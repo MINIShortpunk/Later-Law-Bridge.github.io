@@ -1,36 +1,256 @@
-.cta-card {
-  background-color: #f7f4ee;
-  border-left: 4px solid #c9a84c;
-  padding: 40px;
-  margin: 60px 0;
-  border-radius: 8px;
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us — Later Law Bridge</title>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #2c2c2c;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0a1f44;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-section h2 {
+  color: #c9a84c;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  color: #c9a84c;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f0e6c8;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0a1f44 0%, #1a3a7a 100%);
+  color: #f0e6c8;
+  padding: 80px 40px;
   text-align: center;
 }
 
-.cta-card h3 {
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 700;
+  color: #f0e6c8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.intro-text {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+  color: #555;
+}
+
+.contact-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+}
+
+.contact-card:hover {
+  border-color: #c9a84c;
+  box-shadow: 0 8px 24px rgba(201, 168, 76, 0.15);
+  transform: translateY(-4px);
+}
+
+.contact-card h3 {
   color: #0a1f44;
-  font-size: 24px;
+  font-size: 20px;
   margin: 0 0 12px;
   font-weight: 600;
 }
 
-.cta-card p {
+.contact-card p {
   color: #555;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  font-size: 16px;
 }
 
-.cta-button {
+.email-button {
   background-color: #c9a84c;
   color: #0a1f44;
-  padding: 14px 32px;
+  padding: 10px 24px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 14px;
   display: inline-block;
   transition: all 0.3s;
 }
 
-.cta-button:hover {
+.email-button:hover {
   background-color: #0a1f44;
   color: #c9a84c;
 }
+
+.expectation-section {
+  background-color: #f7f4ee;
+  border-left: 4px solid #c9a84c;
+  padding: 40px;
+  border-radius: 8px;
+  margin: 40px 0 0 0;
+}
+
+.expectation-section h3 {
+  color: #0a1f44;
+  font-size: 20px;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.expectation-section p {
+  color: #555;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+a {
+  color: #c9a84c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0a1f44;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #0a1f44;
+  color: #7a94c4;
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  margin-top: 0;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-section">
+        <svg width="100" height="100" viewBox="0 0 180 110" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="#c9a84c" stroke-width="2.2" fill="none" stroke-linecap="round">
+            <path d="M30 72 Q90 20 150 72" />
+            <line x1="90" y1="22" x2="90" y2="72"/>
+            <line x1="75" y1="24" x2="72" y2="72"/>
+            <line x1="60" y1="32" x2="55" y2="72"/>
+            <line x1="105" y1="24" x2="108" y2="72"/>
+            <line x1="120" y1="32" x2="125" y2="72"/>
+            <path d="M25 72 Q90 60 90 80 Q90 60 155 72" stroke-width="2"/>
+            <path d="M20 78 Q90 65 90 85 Q90 65 160 78" stroke-width="1.5"/>
+            <path d="M18 84 Q90 70 90 90 Q90 70 162 84" stroke-width="1"/>
+          </g>
+        </svg>
+        <h2>Later Law Bridge</h2>
+      </div>
+      
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News & Events</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="community.html">Community</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h1>Get In Touch</h1>
+    </div>
+
+    <div class="container">
+      <p class="intro-text">We'd love to hear from you. Whether you have a question, want to be interviewed, or just want to say hello — reach out!</p>
+
+      <div class="contact-options">
+        <div class="contact-card">
+          <h3>Email Us</h3>
+          <p>Do you have a question or suggestion? We would love to hear from you! Send us an email and we'll get back to you as soon as we can.</p>
+          <a href="mailto:laterlawbridge@gmail.com" class="email-button">Get In Touch</a>
+        </div>
+
+        <div class="contact-card">
+          <h3>Want to be Interviewed?</h3>
+          <p>Share your story. If you're a legal professional who took the long way in, we'd love to hear from you.</p>
+          <a href="mailto:laterlawbridge@gmail.com" class="email-button">Get In Touch</a>
+        </div>
+
+        <div class="contact-card">
+          <h3>Join the Community</h3>
+          <p>Questions about the community or study support? Let us know how we can help.</p>
+          <a href="mailto:laterlawbridge@gmail.com" class="email-button">Get In Touch</a>
+        </div>
+
+        <div class="contact-card">
+          <h3>Partnerships & Sponsorships</h3>
+          <p>Interested in working with Later Law Bridge? We'd love to explore opportunities together.</p>
+          <a href="mailto:laterlawbridge@gmail.com" class="email-button">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="expectation-section">
+        <h3>What to expect</h3>
+        <p>Later Law Bridge is 100% volunteer run, so please note that we typically respond to emails within 2-3 business days. We read every message and appreciate you taking the time to get in touch. Later Law Bridge is built by a small team who are genuinely passionate about making law more inclusive for mature learners - your message matters to us.</p>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Later Law Bridge. Built with love by mature learners, for mature learners.</p>
+    </footer>
+  </body>
+</html>

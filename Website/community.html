@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Community — Later Law Bridge</title>
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     <style>
 * {
   margin: 0;
@@ -120,6 +121,69 @@ p {
   font-weight: 600;
 }
 
+.newsletter-section {
+  background-color: #f7f4ee;
+  border-left: 4px solid #c9a84c;
+  padding: 32px;
+  margin: 40px 0 0 0;
+  border-radius: 8px;
+}
+
+#mc_embed_signup {
+  background: transparent !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  width: 100% !important;
+}
+
+#mc_embed_signup h2 {
+  color: #0a1f44 !important;
+  font-size: 24px !important;
+  margin: 0 0 8px !important;
+  padding: 0 !important;
+}
+
+#mc_embed_signup .indicates-required {
+  margin-bottom: 8px !important;
+}
+
+#mc_embed_signup .mc-field-group {
+  padding-bottom: 8px !important;
+  width: 100% !important;
+}
+
+#mc_embed_signup .mc-field-group label {
+  display: block !important;
+  margin-bottom: 4px !important;
+  color: #0a1f44 !important;
+  font-weight: 600 !important;
+}
+
+#mc_embed_signup .mc-field-group input {
+  border: 1px solid #e8e8e8 !important;
+  border-radius: 8px !important;
+  padding: 12px !important;
+  width: 100% !important;
+  font-size: 16px !important;
+  box-sizing: border-box !important;
+}
+
+#mc_embed_signup .button {
+  background-color: #c9a84c !important;
+  color: #0a1f44 !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  padding: 12px 32px !important;
+  height: auto !important;
+  margin-top: 8px !important;
+  transition: all 0.3s !important;
+}
+
+#mc_embed_signup .button:hover {
+  background-color: #0a1f44 !important;
+  color: #f0e6c8 !important;
+}
+
 a {
   color: #c9a84c;
   text-decoration: none;
@@ -138,7 +202,7 @@ footer {
   text-align: center;
   padding: 40px;
   font-size: 14px;
-  margin-top: 80px;
+  margin-top: 0;
 }
     </style>
   </head>
@@ -164,9 +228,10 @@ footer {
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="interviews.html">Interviews</a>
+        <a href="news.html">News & Events</a>
         <a href="podcast.html">Podcast</a>
         <a href="community.html">Community</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
@@ -199,13 +264,41 @@ footer {
         <p>Meet the interviewees. Ask them anything. Build your network the long way.</p>
       </div>
 
-      <h2>Join Us</h2>
-      <p>Community is free. Sign up for our newsletter and we'll invite you to join.</p>
-      <p><strong><a href="mailto:hello@laterlawbridge.com">Get the newsletter ></a></strong></p>
+      <div class="newsletter-section">
+        <p><strong>Subscribe to our newsletter and we'll let you know when the community goes live!</strong></p>
+        <div id="mc_embed_signup">
+          <form action="https://laterlawbridge.us18.list-manage.com/subscribe/post?u=b043eec73f5240defd9143250&amp;id=a7c69403a3&amp;f_id=00b6a0e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            <div id="mc_embed_signup_scroll">
+              <h2>Join the Community</h2>
+              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+              </div>
+              <div id="mce-responses" class="clear foot">
+                <div class="response" id="mce-error-response" style="display: none;"></div>
+                <div class="response" id="mce-success-response" style="display: none;"></div>
+              </div>
+              <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                <input type="text" name="b_b043eec73f5240defd9143250_a7c69403a3" tabindex="-1" value="">
+              </div>
+              <div class="optionalParent">
+                <div class="clear foot">
+                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
     </div>
 
     <footer>
       <p>&copy; 2026 Later Law Bridge. Built with love by mature learners, for mature learners.</p>
     </footer>
+
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
   </body>
 </html>
